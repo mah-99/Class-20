@@ -1,0 +1,111 @@
+/* Common Css Start */
+:root{
+    --bg-color: #fff;
+    --border-color: #ddd;
+    --text-color: #333;
+    --body-bg-color: #0093E9;
+}
+:root.dark{
+    --bg-color: #000;
+    --border-color: #222;
+    --text-color: #fff;
+    --body-bg-color: #0094e977;
+}
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+/* Common Css End */
+/* Mode_toggler Start */
+#mode_toggler{
+    width: 50px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-size: 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .8s;
+}
+/* Mode_toggler End */
+/* Body Start */
+body{
+    height: 100vh;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+/* Body End */
+/* Form Start */
+#form{
+    width: 50%;
+    background-color: var(--bg-color);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: rgba(4, 182, 236, 0.7);
+}
+#form input{
+    font-family: cursive;
+    width: 100%;
+    font-size: 20px;
+    display: block;
+    padding: 15px 20px;
+    color: var(--text-color);
+    background: var(--bg-color);
+    margin-bottom: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+#form > button {
+    display: block;
+    margin: auto;
+    padding: 10px 50px;
+    font-size: 20px;
+    color: var(--bg-color);
+    background-color: #09b5e0a6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#form .box-2{
+    position: relative;
+}
+#form .box-2 button{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    font-size: 20px;
+    color: rgba(23, 180, 228, 0.685);
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#form .login_btn{
+    font-family: cursive;
+    color: #000;
+    background-color: #90E6FF;
+    transition: .8s;
+}
+#form .login_btn:hover{
+    color: #fff;
+    background-color: #0AB9EC;
+}
+/* Form End */ 
+
+
